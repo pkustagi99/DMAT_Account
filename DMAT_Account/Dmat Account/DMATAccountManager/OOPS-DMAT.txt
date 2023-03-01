@@ -1,0 +1,76 @@
+Registration of Dmat Account 
+Login 
+Login User through account number
+
+Whenever transaction is carried out account balance should be updated
+
+Share Price is static
+Date and time storage automatic
+
+1 single Exchange at a time 
+
+Maintain some share in the program 
+
+----------------------------------------------------------------------
+
+Share
+share_id, Company_name, price, lastUpdatedOn;
+>> Have Some records manually
+
+User
+user_id, username, account_number, password, acc_Balance, lastUpdatedOn
+
+UserShares
+userShare_id, user_id, share_id, companyName, shareCount
+
+transaction
+UserShare_id, share_id, shareCount, pricePerShare, transctedOn,
+transactionCharges, sttCharges, type
+
+type -> 1 : buy
+type -> 2 : sell
+
+
+Considering below RelationShips
+1 User has 1 account
+1 User can have many Shares
+1 User can do many Transactions
+
+--------------------------------------------------------------------
+
+Project Implementation steps
+1. Code Menu -- Done
+2. Code Models -- Done
+3. Write Sql Queries to create tables in DB's --Done
+4. Create DB and Tables --Done
+5. Insert 10 diffrent entries in share table --Done
+
+-------------------------------------------------------------------
+
+Implement Database Module
+6.Create DAO Interface --Done
+7.Create DB Class --Done
+8.Connect to Database i.e; add dependencies and code DB class --Done
+9.Create DAO Classes eg: USER DAO, ShareDAO, TransactionDAO, UserSharesDAO --Done
+
+--------------------------------------------------------------------
+
+Implement Service/Controller Module
+10.AuthenticationService -- Done
+11.ShareService  -- 
+12.TransactionService
+
+---------------------------------------------------------------------
+
+Integrate Service/Controller Module in Menu
+13.Ensure below features are working:
+	2 – Deposit Money -- Done
+	3 – Withdraw Money -- Done
+	4 – Buy transaction -- Done
+	5 – Sell transaction -- Done
+	6 – View transaction report -- Done
+
+----------------------------------------------------------------------
+Finalizing the project
+14.Write Test Cases
+15.Package project as JAR file

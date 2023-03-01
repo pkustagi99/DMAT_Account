@@ -1,0 +1,3 @@
+jdbc:mysql://localhost/dmat_manager
+root
+1234
